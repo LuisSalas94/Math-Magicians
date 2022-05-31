@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import calculate from './logic/calculate';
 
@@ -10,10 +11,12 @@ export default function Calculator() {
   };
 
   return (
-    <div className="calculator-container">
-      <h1 className="calculator-title">Let&apos;s do some math!</h1>
-      <div className="calculator-section">
-        <div className="calculator-container">
+    
+    
+    <div className="calculator-section">
+        <>
+         <h1 className="calculator-title">Let&apos;s do some math!</h1>
+         <div className="calculator-container">
           <div className="result">
             {state.next || state.operation || state.total || 0}
           </div>
@@ -150,8 +153,9 @@ export default function Calculator() {
           >
             =
           </button>
-        </div>
-      </div>
+         </div>
+        </>
     </div>
+    
   );
 }
